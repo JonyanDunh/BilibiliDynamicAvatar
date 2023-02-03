@@ -1,0 +1,4 @@
+https://www.deginx.com/B%E7%AB%99%E5%8A%A8%E5%A4%B4%E4%B8%8A%E4%BC%A0.user.js
+
+
+在 安装了(tampermonkey)油猴插件 的浏览器上打开此链接，会弹出新窗口提示安装，点击安装后窗口会自动关闭，此时安装完成！

@@ -1,0 +1,459 @@
+<html>
+
+<head>
+<title>GIF Movie Gear -- Tutorial</title>
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000" link="#008000" vlink="#008000" alink="#008000">
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top"><font face="Arial" SIZE="1"><img src="indent.gif" alt="indent.gif (46 bytes)" hspace="20" vspace="20" width="15" height="2"></font></td>
+    <td><img border="0" src="tutortit.gif" alt="gamani GIF Movie Gear Tutorial" width="370" height="126"><font SIZE="1"><p></font><strong><big><font face="Arial">Introduction</font></big></strong><font SIZE="1"></p>
+    </font><p><font face="Arial" size="2">GIF Animations are essentially the sequential
+    display of a series of static GIF images. The GIF format allows for a single GIF file to
+    contain multiple GIF images. In a GIF animation, these GIF images are referred to as
+    frames. Basically, each frame of a GIF animation is created from and composed of a single
+    static GIF image. These static GIF images are typically created with any number of
+    computer graphic applications including photo editing applications such as Adobe
+    Photoshop, vector applications (that export to GIF) such as CorelDRAW, or 3D applications
+    such as Ray Dream Studio.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">In this tutorial, we will walk you
+    through the basic process of creating, editing, and optimizing a GIF animation with GIF
+    Movie Gear (GMG). The tutorial can be thought of as two separate lessons: Getting Started
+    and Optimization Techniques:</font></p>
+    <p><a href="#start"><font face="Arial" size="2"><strong>Getting Started</strong></font></a><font face="Arial" SIZE="1"><br>
+    </font><font face="Arial" size="2">- <a href="#load">How to load frames</a><br>
+    - <a href="#order">How to order frames</a><br>
+    - <a href="#preview">How to preview</a><br>
+    - <a href="#color">How to Edit Colors</a><br>
+    - <a href="#timing">How to change the timing</a><br>
+    - <a href="#loop">How to control the looping</a><br>
+    - <a href="#save">How to save</a><br>
+    - <a href="#html">How to add to a Web page</a></font></p>
+      <p><font face="Arial" size="2"><b><a href="#optimize">Optimization Techniques</a><br>
+    </b>- <a href="#reduce">Reducing Colors</a><br>
+    - <a href="#dirty">&quot;Dirty Rectangle&quot; Optimization</a><br>
+    - <a href="#interframe">Inter-frame Transparency Optimization</a><br>
+    - <a href="#remove">Removing Frames</a><br>
+    - <a href="#crop">Cropping</a><br>
+    - <a href="#resize">Resizing</a></font></p>
+    <p><a name="start"><strong><big><font face="Arial">Getting Started</font></big></strong></a><font SIZE="1"></p>
+    </font><font size="3"><b><p></b></font><a name="load"><font face="Arial" size="4">Loading
+    Frames</font></a><font SIZE="1"></p>
+    <p></font><font size="2" face="Arial">Begin by opening up GMG and then select <em>Insert
+    Frames</em> from the <em>File</em> menu or click the toolbar button<img src="b_insfr.gif" align="middle" border="0" hspace="2" width="23" height="22">. There are four files named <i>alien1.gif</i>, <i>alien2.gif</i>,
+    <i>alien3.gif</i>, and <i>alien4.gif</i>. These files were created with CorelDRAW and
+    Adobe Photoshop. Click on the <i>alien1.gif</i> file. Now, hold down on the shift key and
+    click on the <i>alien4.gif</i> file. All four GIF files should be selected as a result of
+    this operation. Hit OK to open the files in GMG (Figure 1). [If the files were not listed
+    in the dialog, they can be found in the /tutorial/samples subfolder of where GIF Movie
+    Gear was installed. The default is C:\Program Files\gamani\GIFMovieGear.]<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2"><i>You can also use the Open command to
+    load animation frames. However, GMG will always start a new animation when you use the
+    Open command. If you already have frames loaded, you can add more frames to the animation
+    using the Insert Frames command, but if you use the Open command, GMG will start a new
+    animation (prompting you first to save any unsaved changes to the previously opened
+    animation).</i></font><font size="2"></p>
+    </font><p align="center"><font face="Arial" size="3"><img border="0" src="fig1.gif" vspace="5" width="624" height="330"><br>
+    </font><font size="2" face="Arial">Figure 1</font></p>
+    <font size="4"><b><p></b><a name="order"><font face="Arial">Ordering Frames</font></a></font><font SIZE="1"></p>
+    <p></font><font size="2" face="Arial">While it may not be readily obvious, all of the
+    frames of the animation have been opened in the correct order. The first frame of the
+    animation should be the little spaceship/alien with no little yellow ring below it. In the
+    second frame there should be a large yellow ring below the spaceship and in the last two
+    frames the yellow ring gets smaller and further away from the spaceship.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">These frames were imported in the
+    correct order because they were saved in that order and because of how GMG imports GIF
+    files according to how they are named. In other words, the GIF file that was intended to
+    be the first frame was saved as <i>alien1.gif</i>, the GIF file that was intended to be
+    the second frame was saved as <i>alien2.gif</i>, and so on. GMG orders multiple GIF files
+    alpha/numerically. Since all of the GIF files have the same name except for the number at
+    the end of the name, GMG used the numbers to determine their frame order. As a further
+    example, if we had files named <i>a.gif</i>, <i>b.gif</i>, and <i>c.gif</i>, etc., GMG
+    will place the <i>a.gif</i> file first and the <i>c.gif</i> file last. <br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">GMG allows you to see all of your frames
+    at once. Click on the <i>Zoom Out</i> toolbar button<img src="b_zoomou.gif" align="center" border="0" hspace="2" width="23" height="22">if you cannot see all the frames in your animations. Now Click and
+    hold down the mouse on the first frame of the animation and then drag it to the right. As
+    you drag, notice the black I-beam line that shows up in between the frames (within the
+    gray borders that separate the frames). This I-beam lines indicates where the frame will
+    be placed when you let up on the mouse. Drag the first frame all the way to the right and
+    let go of the mouse when the I-beam line shows up on the gray border at the far right side
+    of the last frame. When you do this, the first frame will be repositioned and it will now
+    be the last frame.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">If the last frame is not already
+    selected, select it again. Now select <i>Cut</i> from the <i>Edit</i> menu or use the
+    industry standard keyboard shortcut (<i>Ctrl+X</i>). Next, click on the first frame of the
+    animation and then select <i>Paste</i> from the <i>Edit</i> menu or press <i>Ctrl+V</i>.
+    Now the frame will be repositioned at the beginning of the animation. This demonstrates
+    that GMG pastes frames in front of the selected frame. So, you can either reorder frames
+    by dragging and dropping them into position or by cutting and pasting them. Incidentally,
+    a paste goes to the end of the animation when no frames are selected and the <i>File&gt;Insert
+    Frames</i> command conforms to the same paste locations as the Paste command. <br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Before we move on, we have a few
+    suggestions and notes that you should be aware. First, in this example, the files are
+    numbered alien 1-4. If you have more than 9 frames in your animation, we suggest that you
+    use double digit numbers. For example, frame 1 would be &quot;frame01.gif&quot;, frame 5
+    would be &quot;frame05.gif&quot;, frame 10 would be &quot;frame10.gif&quot;, and so on.
+    Doing this will ensure that animations with frames over 9 frames will be arranged in the
+    proper order when you import multiple frames at once. Also note that names only matter
+    when you are opening multiple frames at once. There is no automatic ordering when you
+    import one frame at a time. </font><font SIZE="1"></p>
+    </font><font size="4"><b><p></b><a name="preview"><font face="Arial">Previewing the
+    Animation</font></a></font><font SIZE="1"></p>
+    <p></font><font face="Arial" size="2">Now let&#146;s preview the animation. Click on the <i>Show
+    Animation Preview</i> toolbar button<img src="b_prev.gif" align="center" border="0" hspace="2" width="23" height="22">or use the keyboard shortcut: <i>Ctrl+P</i>. When you do this you will see the
+    animation play in the <i>Preview Animation</i> dialog box exactly as it would on a web
+    page, including frame timing (which we&#146;ll cover in a second).<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">There are several handy options in the
+    Preview Animation dialog box that you should become familiar with. First notice that you
+    can zoom in and out while you preview an animation. The preview dialog box is resizeable,
+    so you can zoom in on your animation and then scrutinize the smallest detail as the
+    animation plays. Also notice the standard VCR-like controls/buttons for stopping, going to
+    the first frame (rewinding), jumping to the last frame, and stepping back and forth
+    through frames one at a time.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Notice that the background of the
+    preview dialog box defaults to a medium gray color. You can change this color. To do this,
+    click on the <i>View Background As</i> button (the small monitor icon<img src="b_viewbk.gif" align="center" border="0" hspace="2" width="19" height="18">in the bottom center of the dialog
+    box). Doing this will open the standard <i>Windows Color Picker</i> dialog box. Click on
+    the little black rectangle in the bottom left corner of the &quot;Basic colors&quot;
+    section of the Colors dialog box and then hit OK. <br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Now the animation is previewed over a
+    black background. This features allows you to preview how an animation will look over a
+    given color background which can be very handy if you use solid color web page backgrounds
+    on your web site. For instance, if you look very closely you will notice that while the
+    example animation&#146;s background appeared to be black, it is actually a very dark gray.
+    Consequently, the animation&#146;s border stands out from the background. In other words,
+    if this animation were placed on a Web page with a black background, it would not
+    integrate with the background color seamlessly. Now we will look at how to fix this
+    problem.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">To close the <i>Animation Preview</i>
+    window, click on the <i>X</i> in the upper right corner or hit the <i>Esc</i> button.</font><font SIZE="1"></p>
+    </font><font size="4"><b><p></b><a name="color"><font face="Arial">Editing Colors in an
+    Animation</font></a></font><font SIZE="1"></p>
+    <p></font><font face="Arial" size="2">Click on the <i>Edit Global Palette</i> button<img src="b_gpal.gif" align="center" hspace="2" border="0" width="23" height="22">on the toolbar or select <i>Edit
+    Global Palette</i> from the <i>Animation</i> menu. This brings up the palette editing
+    dialog. Place your mouse somewhere over the black background in the animation in the
+    preview window. The mouse cursor will change to an eye dropper cursor. A small pop up tag
+    will display the Red, Green, and Blue values under the bottom left tip of the eye dropper
+    cursor. Click when the pop up tag reads something like &quot;R=18, G=20, B=21&quot;.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">This should select the first color
+    square in the color table to the left of the preview window. The selected color swatch is
+    indicated by a red outline around it. Now enter 0 for the Red (R), Green (G), and Blue (B)
+    values (located below the color swatches). You have now changed the background color to
+    pure black. If you look in the preview window you will see that you can no longer see the
+    border between the background and the animation.</font><font SIZE="1"></p>
+    </font><font size="4"><b><p></b><font face="Arial"><a name="timing">Editing Timing</a><b> </b></font></font><font SIZE="1"></p>
+    <p></font><font size="2"><font face="Arial">Now we will look at how to adjust timing and
+    looping of the animation in GMG. Click on the first frame. Now double-click in the field
+    next to the little clock icon <img src="b_clock.gif" align="center" border="0" hspace="2" width="17" height="17">on
+    the toolbar. Enter a value of 50. Frame delays in GIF animations are measured in
+    one-hundredths of a second. So, by entering a value of 50 in this field we have set this
+    frame to display for half of a second. The default timing for each frame is 10 which is
+    1/10<sup>th</sup> of a second. In other words, animations play at a rate of 10 frame a
+    second in GMG by default. (<i>The default setting can be set in the Edit&gt;Preferences&gt;Animation
+    dialog</i>.)<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">We have changed the frame delay for only
+    the first frame. All three of the other frames are still set to 10 or 1/10<sup>th</sup> of
+    a second. Click on the <i>Preview </i>button on the toolbar. Observe that now the
+    animation pauses briefly on the first frame, plays the last three frames quickly, and then
+    pauses on the first frame again. You can leave the preview window open while you make the
+    following timing changes. GMG&#146;s preview window will automatically reflect any timing
+    changes you make in the preview dialog box.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">You can also adjust individual frame
+    delays with the <i>Frame Properties</i> dialog box. Double-click on the third frame or
+    select the third frame and click on the <i>Frame Properties</i> button<img src="b_fprop.gif" align="center" border="0" hspace="2" width="23" height="22">on the toolbar or select the third
+    frame and select <i>Properties</i> from the <i>Frame</i> menu. Double-click on the first
+    field under the <i>Animation</i> section of the dialog box (the field that is followed by
+    the text that reads &quot;1/100th seconds delay after frame&quot;). Enter a value of 200
+    and then hit OK. What does this do? Well, we have changed the value to 200/100ths of a
+    second. This frame will now display for 2 seconds as you can see if you watch the
+    animation preview again.</font><br>
+    <font face="Arial"><img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">This animation
+    doesn&#146;t look very good with frame 1 set to display for half a second and frame 3 set
+    to play for two seconds. It looked much better when all the frames played at the same
+    rate. Fortunately, GMG allows you to make global changes to an animation, including frame
+    delay edits. To do this, select <i>Global Properties</i> from the <i>Frame</i> menu.
+    Notice that the dialog looks almost exactly like the <i>Frame Properties</i> dialog; the
+    difference is that any changes made here will affect <i>all</i> of the frames in the
+    animation, not just one. Click in the first field below the <i>Animation</i> section, type
+    the number 5 and hit OK. This will change all of the frame delays to 5/100ths of a second.
+    Now look at the animation in the <i>Preview Animation</i> dialog box and watch that sucker
+    go!</font></font><font SIZE="1"></p>
+    </font><font size="4"><b><p></b><a name="loop"><font face="Arial">Editing Looping</font></a></font><font SIZE="1"></p>
+    <p></font><font size="2"><font face="Arial">Now we will adjust the looping setting. Close
+    the Preview window. Double click in the field next to the looping arrow<img src="b_loop.gif" align="center" border="0" hspace="2" width="17" height="17">on the toolbar. Enter a value of 5.
+    Click on the Preview button and you will see the animation play five times and then stops.
+    Like timing you can also set the looping </font><br>
+    <font face="Arial"><img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">As you can see, the
+    looping setting determines how many times the animation replays. You can set an animation
+    to play anywhere from only one time to continuous looping. A setting of &quot;0&quot;
+    plays the animation continuously and any other number establishes the actual number of
+    times the animation will loop. For instance, if you enter 10 for the loop setting, the
+    animation will play 10 times and then stop. GMG allows you to adjust the looping settings
+    either via the toolbar or the <i>Animation Properties</i> dialog box. </font></font><font SIZE="1"></p>
+    </font><font size="4"><b><p></b><a name="save"><font face="Arial">Saving an Animation</font></a></font><font SIZE="1"></p>
+    <p></font><font face="Arial" size="2">Now is a good time to save the animation using the <i>File</i>
+    menu. Saving the animation essentially creates the animation. Use <i>Save
+    As</i>&nbsp; or <i>Save</i> or&nbsp;<i> Save GIF Animation As</i> to create your animation. Thereafter you can use <i>Save</i> to save any further
+    edits to an animation and using <i>Save As</i> will save a unique version of the
+    animation. Using the&nbsp;<i> Type</i> dropdown in the <i>Save As</i>
+    dialog, you can choose the file format to which the animation will be saved.
+    Some of these formats (for example, AVI) allow different saving options,
+    which are shown once the file type is selected.</font><font SIZE="5"><b></p>
+    <p></b></font><a name="html"><font face="Arial" size="4">Adding to a Web Page</font></a><font SIZE="5"><b></p>
+    <p></b></font><font face="Arial" size="2">Now the animation is ready to be added to a Web
+    page (such as this one). Select the <em>HTML</em> item from the <em>File</em> menu. The
+    &quot;HTML Code&quot; box at the bottom of the dialog contains the HTML code that should
+    be added to your Web page in order to place the animation there. Options are provided for
+    adding a label/hint, a link, and a border. For example, the finished animation below was
+    placed on this page with an HTML statement similar to the following:</font><br>
+    <b><font size="3"><code>&lt;img src=&quot;alienani.gif&quot; width=111 height=158 border=0
+    alt=&quot;Alien Animation&quot;&gt;</code></font></p>
+    <font SIZE="5"><p align="center"><img border="0" src="alienani.gif" width="111" height="158"></p>
+    <p><font face="Arial">Optimization Techniques with GIF Movie Gear</font></font><font SIZE="4"></p>
+    <p></font></b><a name="optimize"><font face="Arial" size="4">Optimizing Animations</font></a><font SIZE="1"></p>
+    <p></font><font size="2"><font face="Arial">When we talk about &quot;optimizing&quot; an
+    animation we are referring to reducing its file size. The smaller the file size of an
+    animation, the faster it will download over the Internet. Usually the goal is to make an
+    animation&#146;s file size as small as possible while keeping the animation itself as
+    presentable as possible. There are many different ways to optimize a GIF animation. Here
+    are the possible ways to optimize a GIF animation:</font></p>
+    <p><font face="Arial">1. Reduce the number of colors used<br>
+    2. Use &quot;Dirty Rectangle&quot; Optimization<br>
+    3. Use transparency for Inter-frame Optimization<br>
+    4. Remove frames<br>
+    5. Crop the animation&#146;s physical size<br>
+    6. Resize the animation to a smaller physical size</font></p>
+    <p><font face="Arial">GIF Movie Gear can perform all of these optimizations. Let&#146;s
+    look at each one. However, before we start let&#146;s make a note of the animation&#146;s
+    file size before optimizations. GMG provides this information in the status bar at the
+    bottom of its interface. At the far bottom left you will see the total number of frames in
+    the animation along with which frame is currently selected. The next box to the right
+    shows the dimensions of the animation followed by the total running time. Next to this you
+    will see the current file size of the animation along with its estimated download time at
+    a given Internet connection speed (you can change the Internet connection speed that GMG
+    targets with the <i>Download Time</i> item located in the <i>View</i> menu). The last box
+    shows the current zoom state.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">This animation should be approximately
+    7,153 bytes (the exact number will depend on your <i>GIF Signature</i> setting
+    in <i>Edit&gt;Preferences&gt;Export</i>) which would take approximately 2 seconds to download over the Internet.
+    Although two seconds isn&#146;t a very long time, we can shave some bytes off of this
+    animation so that it will download even faster.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">NOTE: The effectiveness of the above
+    optimization methods vary from animation to animation. All of the specifics discussed
+    below include numbers that are specific to our sample animation. Results will vary
+    depending on the animation being produced.</font></font><font SIZE="1"></p>
+    </font><font SIZE="4"><b><p></b><a name="reduce"><font face="Arial">Reducing Colors</font></a></font><font SIZE="1"></p>
+    <p></font><font size="2"><font face="Arial">This particular animation has very few colors
+    in it (take a look at the colors using <i>Animation&gt;Edit Global Palette</i>), so it is
+    already somewhat &quot;optimized.&quot; This is because the colors in all of the
+    files/frames amounted to only 35 colors when the frames were imported into GMG. In other
+    words, the animation&#146;s &quot;global palette&quot; (the palette used for all of the
+    frames) contains only 35 colors. Animations that use a global palette can contain up to
+    256 colors. Typically, the more colors there are in an animation, the larger its file
+    size. Due to how the GIF format compresses, this is not always true, but this
+    generalization holds true for the majority of GIF animations.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">You can reduce the number of colors in
+    the animation by either clicking on the <i>Reduce Colors</i> button<img src="b_redcol.gif" align="center" border="0" hspace="2" width="23" height="22">on the toolbar or by selecting the <i>Reduce Colors</i>
+    option from the <i>Animation</i> menu. Figure 2 shows the <i>Reduce Colors</i> dialog box
+    which features two preview windows for the animation. The window on the left shows the
+    original animation and the window on the right shows the animation after it has been color
+    reduced. These side by side windows allow you to see the animation before and after color
+    reduction, which allows you to determine whether or not the color reduction adversely
+    affects the animation&#146;s visual quality. GIF Movie Gear even allows you to zoom in
+    within the preview windows to scrutinize the differences more closely.</font></p>
+    <p align="center"><img border="0" src="fig2.gif" vspace="5" width="596" height="451"><font face="Arial"><br>
+    Figure 2</font></p>
+    <p><font face="Arial"><img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">In our example,
+    GMG automatically set the &quot;Number of colors in reduced palette&quot; drop down menu
+    to a 32 color (5-bit) palette. Since this only removes 3 colors from the animation, go
+    ahead and select 16 color (4-bit) from the &quot;Number of colors in reduced palette&quot;
+    drop down menu. Now press play and compare the two variations. The preview on the left
+    plays the original 35 color animation and the preview on the right plays the new 16 color
+    version of the animation.</font><br>
+    <font face="Arial"><img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Notice that there is
+    very little difference between the two versions of the animation. That&#146;s the key.
+    Also notice that the preview windows provides before-and-after file size information. In
+    figure 2, the information below the right window indicates that going from a
+    34 color
+    palette to 16 color palette will remove 1089 bytes from the animation and that the
+    1089 bytes saved amounts to a 14.4% file size savings. Reducing the animation to a 16 color
+    palette reduced the overall animation down to 6,334 bytes.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">If you look very carefully, you will
+    notice that the yellow &quot;propulsion rings&quot; have become slightly orange-ish after
+    the palette reduction. You can fine-tune single colors like this using the <em>Edit Global
+    Palette</em> as discussed earlier.</font></font><font SIZE="1"></p>
+    </font><font SIZE="4"><b><p></b><a name="dirty"><font face="Arial">&quot;Dirty
+    Rectangle&quot; Optimization</font></a></font><font SIZE="1"></p>
+    <p></font><font size="2"><font face="Arial">Dirty Rectangle Optimization refers to a
+    method of optimization that involves cropping frames in a GIF animation to their smallest
+    needed rectangle. These frames are then played one atop the other using pixel coordinates
+    for placement. The best way to understand this is to look at an example. Our little space
+    alien example animation doesn&#146;t benefit much from this type of optimization, so
+    let&#146;s look at a different example.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">First let&#146;s look at Figure 3. As
+    you can see, this animation is your basic bouncing ball animation. However, notice that
+    the background (the yellow wall and the brown floor) have a noisy texture. Most
+    importantly, notice that the background is identical in each frame: it is redundant
+    information that is repeated over and over. This texture might make the animation a bit
+    more interesting but it&#146;s not so good for file size. Before optimization, this
+    animation is 39.6Kb. This animation would take 5.7 seconds to download with a
+    56K modem. Fortunately we can do better than that.</font></p>
+    <p align="center"><font face="Arial"><img border="0" src="fig3.gif" vspace="5" width="515" height="338"><br>
+    Figure 3</font></p>
+    <p><font face="Arial">Open the sample animation file <em>ball.gif</em>. Now click on the <i>Optimize
+    Animation</i> button<img src="b_opt.gif" align="center" border="0" hspace="2" width="23" height="22">or select <i>Optimize</i>
+    from the <i>Animation</i> menu. For now, make sure that the &quot;Replace duplicate pixels
+    with Transparency&quot; option in the<i> Optimize Animation</i> dialog box is <i>not</i>
+    selected and then click OK. The results of this operation is that all of the frames except
+    for the first have been reduced to smaller rectangular areas (as shown in Figure 4 where a
+    few frames from the animation are shown). </font></p>
+    <p align="center"><font face="Arial"><img border="0" src="fig4.gif" vspace="5" width="515" height="338"><br>
+    Figure 4</font></p>
+    <p><font face="Arial">This operation has reduced the file size to only 11.5 Kb.
+    That&#146;s an over 30K file size savings. Now the animation takes just 1.6 seconds to
+    download. Much better.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">It helps to know what&#146;s happening
+    with the &quot;dirty rectangle&quot; optimization option because of its impact on how you
+    might design your animation frames, so let&#146;s quickly cover how this form of
+    optimization works. Basically each of the frames after frame 1 have been reduced to the
+    smallest needed rectangle. The duplicated or redundant portions of the frames are cropped
+    out. So, each frame after frame one is actually simply a smaller GIF file. The smaller GIF
+    files are displayed over the first frame using pixels coordinates for their placement.
+    Since the smaller GIF images only partially cover the first frame, you can still see parts
+    of the original frame as the animation plays.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">To verify this, double click on the
+    second frame of the animation. This will open the Frame Properties dialog box. Notice that
+    the Offset X and Offset Y options are (or should be) 26 and 12 respectively. These
+    coordinates correspond to the top left corner of the image in the frame. Change these both
+    to 1 and notice what happens. Now the contents of the second frame are positioned over the
+    top left corner of the frame. Undo this change using <i>Edit&gt;Undo</i> or
+    the keyboard shortcut <i>Ctrl+Z</i>.&nbsp;<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Now notice that frame 5-8 actually haven&#146;t been cropped to the
+    smallest needed rectangle. All we need is the ball and the shadow, but areas to the left
+    are still visible. This is because there are very slight changes in that region which GMG
+    has detected. Fortunately we can easily fix this manually.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Click on frame 5 and select <i>Move/Crop</i>
+    from the <i>Frame</i> menu. Notice that the GIF image for this frame is shown in the
+    preview window with a bounding box around it. Click and drag the center square on the left
+    side of the GIF image in the preview window. Drag to the left until the bounding
+    box&#146;s left edge is almost touching the blue ball. Let up on the mouse and click
+    OK.
+    If you repeat this operation for frames 6, 7, and 8 (see Figure 5) you should be able to
+    lop off another 2.5K or so from the animation&#146;s file size. The final animation still plays
+    exactly the same as the original (<em><strong>no loss of data!</strong></em>), but the file size has
+    dropped from 39.6Kb to 8.9Kb. </font></p>
+    </font><font size="5"><b><p align="center"></b></font><small><font face="Arial"><img border="0" src="fig5.gif" vspace="5" width="515" height="338"><br>
+    Figure 5</font></small><font SIZE="4"><b></p>
+    <p></b><a name="interframe"><font face="Arial">Inter-frame Transparency Optimization</font></a></font><font SIZE="1"></p>
+    <p></font><font size="2"><font face="Arial">An additional way to optimize an animation is
+    to make the rest of the redundant portions of animation, those that are inside the
+    &quot;dirty rectangles,&quot; transparent. This often results in file size savings. You
+    may already be familiar with the fact that GIF file can contain transparency information.
+    In other words, some colors in a GIF file can be made transparent. When parts of a GIF
+    file are transparent, they show through to any background imagery behind them.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">For a static GIF image, this would mean
+    that transparent portions of a GIF file would show through to the Web page&#146;s
+    background color or texture. You can take advantage of transparency within animations as
+    well. Essentially, a GIF frame can contain transparent areas that show through to earlier
+    frames. We refer to this as &quot;Inter-frame Transparency.&quot;<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">All you need to do to optimize the
+    animation with inter-frame transparency is click on the <i>Optimize Animation</i> button<img src="b_opt.gif" align="center" border="0" hspace="2" width="23" height="22">or select <i>Optimize</i> from the <i>Animation</i>
+    menu. The <i>Frame Reduction</i> section has three options: &quot;Shrink frames to
+    smallest needed rectangle,&quot; &quot;Replace duplicate pixels with transparency,&quot;
+    and &quot;Remove unnecessary frame.&quot; We are only concerned with the first two options
+    for the purpose of inter-frame transparency optimization. The &quot;Shrink frames to
+    smallest needed rectangle&quot; option (which we just talked about in the &quot;Dirty
+    Rectangle optimization&quot; section) must be selected before you can use the
+    &quot;Replace duplicate pixels with Transparency&quot; option.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">The &quot;Replace duplicate pixels with
+    transparency&quot; option takes the idea of making portions of GIF animation frames
+    transparent a little further than the &quot;Dirty Rectangle&quot; method. The idea is to
+    remove all unnecessarily redundant pixels between frames. Sometimes this results in a
+    significant file size savings, but not always. As with most optimizations, it depends on
+    the animation itself.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">For example, with the &quot;Replace
+    duplicate pixels with Transparency&quot; on, the bouncing ball is reduced from 8.9Kb to
+    7.2Kb--a tidy little savings accomplished without any loss of data. On the other hand on
+    the alien spaceship example the was no savings. In the alien spaceship animation there are
+    a lot of black pixels around the little space ship that are redundant between frames 2, 3,
+    and 4, but this doesn&#146;t mean that making these areas transparent will decrease its
+    file size--in fact it will likely increase the file size. Consequently, there is no
+    difference in the optimization when you have the &quot;Replace duplicate pixels with
+    transparency&quot; option on or off.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">This apparent lack of transparency is
+    because GMG is smart about how it applies transparency. When it determines that a
+    transparency option will actually increase the file size, it avoids actually applying that
+    option. So, for alien spaceship example animation, GMG doesn&#146;t actually use
+    inter-fame
+    transparency even if you turn it on, because it would increase&#151;not decrease&#151;the
+    animation&#146;s file size.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">In general, you can safely leave both of
+    these options on and be confident that GMG will choose the best combination of
+    inter-frame transparency optimization options that will result in the smallest file size or the large
+    file size savings. They were discussed separately in this tutorial only for instructional
+    reasons.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Incidentally, the &quot;Remove
+    unnecessary frame&quot; option removes any duplicate frames in an animation. This feature
+    is useful because some early GIF animation designers did not realize that each frame can
+    have its own timing, so they used multiple copies of a given frame to build in pauses. For
+    example, rather than timing a frame for a second, they would include 10 copies of the
+    frame each timed at 10/100ths of a second. Those 9 extra frames added needlessly to the
+    animation&#146;s file size.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">Finally notice that you can remove any
+    inter-frame transparency and/or dirty rectangle cropping in any animation (including any
+    animations you download from the Web) by selecting <i>Unoptimize </i>from the <i>Animation</i>
+    menu. Below are the original and optimized versions of the bouncing ball animation:</font></p>
+    </font><div align="center"><center><table border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><p align="center"><font face="Arial" size="2"><img src="samples/ball.gif" alt="Original Animation" vspace="5" hspace="50" width="72" height="72"><br>
+        Original: 39,631bytes</font></td>
+        <td><p align="center"><font face="Arial" size="2"><img src="ballopt.gif" alt="Optimized Animation" vspace="5" hspace="50" width="72" height="72"><br>
+        Optimized: 7258 bytes</font></td>
+      </tr>
+    </table>
+    </center></div><font SIZE="4"><b><p></b><a name="remove"><font face="Arial">Removing
+    frames</font></a></font><font SIZE="1"></p>
+    <p></font><font face="Arial" size="2">Removing frames is simply a matter of selecting and
+    deleting a frame. Of course, the fewer frames in an animation, the smaller the file size.
+    In the spaceship animation, click on frame 4 and delete it. Notice that the resulting file
+    size of the animation has been reduced to only 4,748 bytes a saving of almost 1,500 bytes.
+    (You can restore the frame by using <i>Undo</i>, found in the <i>Edit</i> menu.) GMG also
+    features an option called <i>Thin (Reduce Count)</i> (in the <i>Animation</i> menu). This feature
+    automates the removal of frames. For instance, if you have an animation with 20 frames,
+    you can have GMG remove every other frame to bring the animation down to only 10 frames.
+    This feature is particularly useful for animations created from digital video.</font><b><font SIZE="4"></p>
+    <p></font></b><a name="crop"><font face="Arial" SIZE="4">Cropping the animation</font><font face="Arial"> </font></a><font SIZE="1"></p>
+    <p></font><font face="Arial" size="2">As a general rule, the dimensions of a GIF animation
+    should be no larger than they absolutely have to be. For example, our example animation
+    (the spaceship) is now overly large after we&#146;ve deleted the last frame. No motion
+    occurs over a significant portion of the bottom of the animation, so we can slice a bit
+    off the animation&#146;s file size by cropping out this portion on all of the frames.<br>
+    <img src="indent.gif" alt="indent.gif (46 bytes)" width="15" height="2">To do this, select the frame that
+    contains artwork that extends furthest to the bottom (which was frame 3). Now choose <i>Crop</i>
+    from the <i>Animation</i> menu. To crop the animation, you simply drag the handles of the
+    marquee in the preview window to the position you wish to crop to. To crop this animation,
+    click on the bottom center handle and drag up until the Height is about 150 pixels. GIF
+    Movie Gear also allows you crop numerically and you can preview the results before
+    cropping. Click OK. Cropping the animation should reduce its file size to 4,733 bytes.</font><font SIZE="1"></p>
+    </font><font SIZE="4"><b><p></b><a name="resize"><font face="Arial">Resizing the animation</font></a></font><font SIZE="1"></p>
+    <p></font><font face="Arial" size="2">Reducing an animation&#146;s dimensions is an
+    obvious way to reduce the file size of an animation. GIF Movie Gear allows you to resize
+    animation with the <i>Resize</i> option available in the <i>Animation</i> menu. You can
+    resize animations according to numerical pixel dimensions or percentages. There is a
+    &quot;Maintain Aspect Ration&quot; option to keep the animation from becoming deformed.
+    Resizing animations can adversely affect the palette and inter-frame transparency
+    optimization so usually it is best to resize the animation before optimizing the palette
+    or inter-frame transparency of the animation. Reducing the spaceship animation&#146;s
+    dimensions by 80% of its cropped size results in a file size of 3,551 bytes.</font><font SIZE="1"></p>
+    </font>
+    <hr width="50%">
+    <p><font face="Arial" size="1">Copyright ©1999-2004 gamani productions. All rights reserved.<br>
+    Movie Gear is a trademark of gamani productions<br>
+    GIF is a Service Mark of CompuServe Inc.</font></td>
+    <td valign="top"><font face="Arial" size="1"><img src="indent.gif" alt="indent.gif (46 bytes)" hspace="20" vspace="20" width="15" height="2"></font></td>
+  </tr>
+</table>
+</body>
+</html>
